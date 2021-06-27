@@ -24,11 +24,11 @@ module.exports = {
     new ModuleFederationPlugin({
       
         // For remotes (please adjust)
-        // name: "mfe1",
-        // filename: "remoteEntry.js",
-        // exposes: {
-        //     './Component': './projects/mfe1/src/app/app.component.ts',
-        // },        
+        name: "mfe1",
+        filename: "remoteEntry.js",
+        exposes: {
+            './Module': './projects/mfe1/src/app/functions/functions.module.ts',
+        },        
         
         // For hosts (please adjust)
         // remotes: {
