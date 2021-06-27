@@ -9,16 +9,16 @@ const routes: Routes = [
     path: "home",
     component: MainComponent
   },
-  {
-    path: 'mfe1',
-        loadChildren: () =>
-            loadRemoteModule({
-                remoteEntry: 'http://localhost:4300/remoteEntry.js',
-                remoteName: 'mfe1',
-                exposedModule: './Module'
-            })
-            .then(m => m.FunctionsModule)
-  }
+  // {
+  //   path: 'mfe1',
+  //       loadChildren: () =>
+  //           loadRemoteModule({
+  //               remoteEntry: 'http://localhost:4300/remoteEntry.js',
+  //               remoteName: 'mfe1',
+  //               exposedModule: './Module'
+  //           })
+  //           .then(m => m.FunctionsModule)
+  // }
 ];
 
 @NgModule({
